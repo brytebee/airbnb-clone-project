@@ -79,6 +79,71 @@ Caching: Use caching strategies to reduce database load and improve performance.
 
 
 ## API Security
-- **Authentication:** with JSON web tokens
-- **Authorization:** define User roles and permissions
-- **Rate Limiting:** Limit calls per minute to the API
+Here are key security features explained in single sentences:
+
+**Authentication**
+- Verifies the identity of users attempting to access the system through credentials like passwords, biometrics, or multi-factor authentication.
+
+**Authorization**
+- Controls what authenticated users are permitted to do within the system based on their roles and permissions.
+
+**Rate Limiting**
+- Restricts the number of requests a user or IP address can make within a specific time period to prevent abuse and DDoS attacks.
+
+**Input Validation**
+- Sanitizes and validates all user inputs to prevent malicious code injection attacks like SQL injection and cross-site scripting (XSS).
+
+**Session Management**
+- Securely handles user sessions through encrypted tokens, timeout policies, and proper session termination to prevent unauthorized access.
+
+**Encryption**
+- Protects sensitive data by converting it into unreadable format both in transit (HTTPS/TLS) and at rest (database encryption).
+
+**Access Control Lists (ACL)**
+- Defines specific permissions for users or groups regarding which resources they can read, write, execute, or delete.
+
+**Audit Logging**
+- Records all security-relevant events and user actions to enable monitoring, compliance reporting, and forensic analysis.
+
+**Cross-Site Request Forgery (CSRF) Protection**
+- Prevents malicious websites from performing unauthorized actions on behalf of authenticated users through token validation.
+
+**Content Security Policy (CSP)**
+- Restricts which resources (scripts, stylesheets, images) can be loaded by web pages to prevent code injection attacks.
+
+**Password Policies**
+- Enforces minimum security requirements for passwords including complexity, length, expiration, and prevention of password reuse.
+
+**API Security**
+- Protects application programming interfaces through authentication tokens, request signing, and endpoint-specific access controls.
+
+## CI/CD Pipeline
+**Rapid Feature Deployment**
+- Enables quick rollout of new booking features, payment methods, and user interface improvements to stay competitive in the fast-moving travel market.
+
+**High Availability Requirements**
+- Ensures minimal downtime through automated testing and deployment, critical for a 24/7 global booking platform where outages directly impact revenue.
+
+**Payment Security & Compliance**
+- Automates security testing and compliance checks for payment processing, ensuring PCI DSS and other regulatory requirements are continuously validated.
+
+**Multi-Region Deployment**
+- Facilitates synchronized deployments across global data centers to maintain consistent user experience worldwide.
+
+**Peak Traffic Handling**
+- Enables rapid scaling and deployment of performance optimizations during high-demand periods (holidays, events, peak travel seasons).
+
+**Bug Fix Speed**
+- Allows immediate deployment of critical fixes for booking errors, payment failures, or security vulnerabilities that could impact user trust.
+
+**A/B Testing Capability**
+- Supports continuous experimentation with booking flows, pricing displays, and user interfaces to optimize conversion rates.
+
+**Database Migration Safety**
+- Automates testing of database changes affecting millions of bookings, preventing data corruption or booking system failures.
+
+**Integration Testing**
+- Continuously validates connections with third-party services (payment processors, mapping services, communication tools) essential for booking operations.
+
+**Rollback Capability**
+- Provides instant rollback mechanisms if deployments cause booking disruptions, minimizing financial impact and user frustration.
